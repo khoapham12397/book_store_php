@@ -1,0 +1,23 @@
+.drop-out{
+	position: relative;
+}
+
+.drop-out-content{
+	background-color: black;
+	color: white;
+	display: none;
+	
+	width:500px;
+	
+}
+.drop-out:hover .drop-out-content{
+	display: block;
+	
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+ul li{
+	list-style: none;
+}

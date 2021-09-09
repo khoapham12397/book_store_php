@@ -1,0 +1,6 @@
+# TCP protocol: 
++ Reliable data transfer mechanism:
+-> tcp segment structure: co 2 important fields ACK and SEQ
+# Doi voi cac trong rdt cac doi truoc ko phai la TCP, thi ro rang moi 1 ack la bien nhan cu the cho 1 pkt voi 1 gia tri seq xac dinh.
+For example, in GBN: there's a window N, there are 3 event in sender side : 
+	(sendBase, nextSeq) is the tuple-2 of variables in sender side we must focus>>>

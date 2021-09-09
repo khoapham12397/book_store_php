@@ -1,0 +1,33 @@
+.book-item-tbl{
+	width: 100px;
+	height : 140px;
+}
+
+.book-img{
+	width: 150px;
+	height: 220px;
+}
+
+#list_book{
+	margin-left: 10px;
+	background-color: #FFFFFF;
+}
+li.book-item{
+	background-color: #FFFFFF;
+	float: left;
+	list-style: none;
+
+	padding: 10px;
+	margin: 0px;
+
+}
+
+li.book-item a{
+	text-decoration: none;
+	color: black;
+}
+
+li.book-item .container{
+	width: 200px;
+	height: 270px;
+}

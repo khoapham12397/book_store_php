@@ -1,0 +1,366 @@
+body{
+	font-family: cursive;
+	font-size: 15px;
+	width: 1000px;
+	margin: 0px auto;
+
+}
+#banner-top{
+	margin-top: 0px;
+	background-color: black;
+	height: 180px;
+}
+#menu-top{
+	
+	background-color: #000044;
+	height: 40px;
+}
+#menu-top ul{
+	margin: 0px;
+	padding: 0px;
+}
+#menu-top ul li.main-title{
+	list-style: none;
+	float: left;
+	width: 120px;
+	text-align: center;
+	
+	margin-left:0px;
+}
+
+#menu-top ul li.main-title a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 40px;
+}
+#menu-top ul li.main-title a:hover{
+	color: #00CCCC;
+}
+
+#menu-top ul li.sub-title{
+	float: left;
+	list-style: none;
+	text-indent: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+	width: 200px;
+	
+}
+
+
+#menu-top ul li.sub-title a{
+	color: #ccc;
+	font-size: 15px;
+	text-decoration: none;
+	
+	padding: 10px;
+}
+#menu-top ul li.sub-title a:hover{
+	color: yellow;
+}
+#main{
+	
+	margin-top:10px;
+}
+
+#main #left{
+	width: 760px;
+	min-height: 500px;
+	float: left;
+	
+}
+#main #right{
+
+	margin-top: 55px; 
+	width: 230px;
+	float: right;
+	min-height: 500px;
+	
+}
+#main #left ul{
+	margin: 0px;
+	padding: 0px;
+}
+li.book-item{
+	list-style: none;
+	float: left;
+	
+	margin-top: 10px;
+}
+li.book-item a{
+	text-decoration: none;
+	color: black;
+}
+
+#main #left ul li.doc-item{
+	list-style: none;
+	margin-top: 10px;
+	float:left;
+}
+#main #left ul li.doc-item a{
+	text-decoration: none;
+	color: black;
+}
+#contain-book{
+	width: 185px;
+	height: 300px;
+		
+}
+#contain-book img{
+	object-fit: cover;
+	width: 160px;
+	height: 210px;
+	padding-left: 10px;
+}
+#contain-book h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+#contain-book div{
+	margin-left: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+#main #right h3{
+	margin-top: 0px;
+	height: 40px;
+	background-color: #000044;
+	color: white;
+	margin-left: 0px;
+	line-height: 40px;
+	text-align: center;
+}
+
+#main #right ul {
+	margin: 0px;
+	padding: 0px;
+}
+#main #right ul li{
+	list-style: none;
+	height: 40px;
+	padding-left: 15px;
+	border-bottom: 1px solid white;
+	width: 230px;
+}
+#main #right ul li a{
+	line-height: 40px;
+	text-decoration: none;
+	color: #ccc;
+	font-size: 15px;
+}
+
+#main #left #image_book{
+	float: left;
+	width: 300px;
+	height: 350px;
+	border-right: 1px solid #ccc; 
+	margin-bottom: 10px;
+}
+#main #left #intro_book h2{
+	margin-top: 0px;
+	float: left;
+	width: 449px;	
+	padding-left: 10px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+#main #left #detail{
+	clear: left;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	min-height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+table, th, td{
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+table{
+	font-size: 16px;
+    border-collapse:collapse;
+}
+table.ordinary tr:nth-child(odd){
+    background-color:#eee;
+}
+table.ordinary tr:nth-child(even){
+    background-color:white;
+}
+#formRegister{
+	width: 760px;
+	border: 1px solid #ccc;
+
+}
+#formRegister input{
+	font-size: 16px;
+	width: 500px;
+	height: 30px;
+	border-radius: 10px;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+.log{
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+}
+
+
+#tblInvoice tr td{
+	text-align: center;
+	
+}
+#contain-docs{
+	height: 150px;
+	width: 150px;
+	
+}
+#contain-docs img{
+	margin-left: 25px;
+	width: 100px;
+	height: 100px;
+	margin-top: 0px;
+	border-radius: 30px;
+}
+#contain-docs h3{
+	font-size: 15px;
+	
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+.drop-out{
+	position: relative;
+}
+.drop-out-content{
+	display: none;
+	color: black;
+	
+}
+.drop-out-content ul{
+	margin: 0px;
+	padding: 0px;
+}
+.drop-out-content ul li{
+	list-style: none;
+	font-size: 15px;
+}
+.drop-out:hover .drop-out-content{
+	display: block;
+}
+#catego ul li a:hover{
+	color: yellow;
+}
+#menu-top .drop-out:hover .drop-out-content{
+	display: block;
+	position: absolute;
+}
+
+#catego{
+	margin-top:10px;
+	font-size: 17px;
+	color: white;
+	height: 40px;
+	text-indent: 10px;
+	margin-bottom: 0px;
+}
+#catego:hover{
+	color: #00CCCC;
+}
+#main #right ul li a:hover{
+	color: yellow;
+}
+#btnPrev{
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+	font-size: 15px;
+	background-color: transparent;
+	border: none;
+}
+#btnNext{
+	margin-top: 10px;
+	border: none;	
+	float: right;
+	margin-right: 20px;
+	font-size: 15px;
+	background-color: transparent;
+}
+#btnNext:hover{
+	color: red;
+}
+#btnPrev:hover{
+	color: red;
+}
+.item-list-style{
+	font: bold;
+	font-size: 15px;
+}
+.item-list-style a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+.item-list-style a:hover{
+	color: blue;
+}
+
+.keyinput{
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-size: 15px;
+	height: 40px;
+	width: 250px;
+	border-radius: 20px;
+	float: left;
+}
+xmp{
+	border: 1px solid #999;
+	background-color: #ccc;
+	display: block;
+	padding: 20px;
+	
+}
+.order-info{
+	width: 299px;
+	border-right: 1px solid #ccc;
+	
+	float: left;	
+}
+.order-item-info{
+	width: 460px;
+
+	
+	float: left;
+}
+#btn_uforder:hover{
+	color: red;
+}
+#footer{
+
+	clear: left;
+	min-height: 30px;
+}
+#btnPayment:hover{
+	color: red;
+}
+
+.contain-icon{
+	width: 80px;
+	
+}
+.contain-icon div{
+	width: 75px;
+	text-align: center;
+}
+#list-icons li{
+	list-style: none;
+	float: left;
+	margin-right:35px;
+}
+.contain-icon img{
+	margin-left: 15px;
+}

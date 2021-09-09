@@ -1,0 +1,322 @@
+Array processing function in PHP:
++ array_slice(array, offset,len,(true | false)-> optional);
++ array_splice(array,offset,len,replacement)
++ array_push(array,element)
++ array_pop(array);=> remove the final element in array
++ array_merge($ar1,$ar2); -> return 1 array duoc tron lai va co the la sort lai 
++ sort(array) -> co the duoc thuc hien : 
++ rsort(array)-> descending order 
++ 
+
++ traverse the array we can use : foreach(array as key=>value){
+		//access element throught value -> ez dung,we use the copy of value 
+	}
++ to access refference -> traverse by ind 
++ set up lai value by index -> ok
++ array_unshift(array,element) -> add element at the begining of the array
++ max(array) -> return the max value of the array
++ count(array) -> get size of array
+String in PHP:
+# concatenate by . ->ok
+# string data type in PHP ??? -> how it 's implemented ??
+# strlen(str)-> get length of a string just at c
+# most of basic function are implemented availably
+# strcmp(str1,str2)-> 
+# strpos(str1,str2) -> return the position of the first occurence str2 in str1 
+# so we can see that: if 
+
+#nen nho 1 array in php -> access throught key word => can be index
+
+
+Review JS : 
++ All things is object :
++ structure of js object: ;
+var obj={
+	"key1" : value1, "key2": value2,..,"keyn":valuen;
+}
+//all things just ez: -> dung la nhu vay :
+JSON.stringify(object) -> convert js object to JSON -> dung la nhu vay -> cast JSON to object ???
+# when receiving data from a web server, data 's alway a string -> so in jquery -> we set dataType is json => automatic call data=JSON.parse(data_received) -> so we can use data just at a js object
+# it 's very ez 
+# this is the same as getting json from web server in android app 
+
+# To access a field of object, using . -> dung 
+# 2 different point between js and php syntax -> 
+# pass no vao nhu la 1 tham so cua function dung la nhu vay do no co su dung bien let la 1 su copy value trong vong lap nen no se duoc di kem dung la nhu vay 
+str.indexOf(str1)
+document.addEventListener("keydown"(this is the type of event), function(event){
+	
+});
+this is an interface we can use to implement 1 thu co san 
+With using docment, we can access the DOM -> create, add, set attribute, set Text, set value, update all elements in html
+# ok just ez  and it can be done in client side separately with server side 
+# neu nhu viec thuc hien cac van de nay duoc dien ra ntn ->>> 
+# With the supporting of jquery -> we can access quickly all elements setting up
+.text and many things else -> just ok
+# setting header: Content: html
+#ban chat la 2 cai relative o chong len nhau thi ok
+
+
+# kien thuc ve bat dang thuc la gi ????
+# no la su khao sat va bien doi cac dai luong thong qua cac phep bien doi so cap ???
+# vi du : khi ton tai bieu thuc nay, ta thay no bang 1 bieu thuc khac trong danh gia ???
+# khi do tien hanh khao sat, vay thi no dat duoc cai gi ????
+# ro rang la khi nao thi 1 danh gia tro nen hop ly ?????
+# dich den cuoi cung la ton tai 1 cai gi do mang tinh hien nhien , phan tich dua ve cac dang nao do co the tach ra duoc thi cung rat don gian de xac dinh ????
+# tiep do la van de ve don gian hoa cac dai luong, dung la nhu vay , cau hoi dat ra la ta can 1 bieu thuc o hinh thuc don gian hon (dung ) khi do bac se thap hon , triet tieu duoc phan nao do de co the bien doi tuong duong , 
+
+# cac knowledge in programming: (php,js,python ,java, c,c++,c# , html,css)
+# cac kien thuc general ve he thong ha tang mang , dia chi ip, xac dinh cac giao thuc tham gia vao qua trinh transmit, ok  ,kien thuc os va cac van de lien quan, he thong database bao gom attributes,... viec xay dung server,code web lap trinh web xay ra ntn ??? , ngoai ra la cac van de khac nua ???,, dung la nhu vay con van de gi nua ??? 
+
+# nhung van de tren kha la don gian de he thong lai , ngoai ra thi ????
+# vi du: neu ta co he thong la 1 thu gi do ma co the sap xep thu tu :
+# tinh toan 1 cach trung binh thi gia tri trung vi la???
+# khai thac mau , tinh toan  voi cac thuat toan lap xap xi ???
+# thuc hien phep ngoai suy 
+# nen tong quat hoa cac phuong giai trong pqr,vi dieu nay thuc su mang tinh tong quat dung la vay : sau do the nao ??? gia su ta co cong cu ve don bien thi thuc hien
+# thu nhat : neu xet co ban thi minh bat dau hoc ve no tu 2012->2020 
+
+
+# vi du ve viec solve cac bai toan ve cac dinh ly trong so hoc , giai cac pt diophantine 
+# dung la vay-> ez  ok  hop ly:
+
+
+# tiep theo cac van de tren ta lai co cai gi ????
+
+# today we can't do anything????
+
+# chon ra mo hinh dung dan nhat, trong cac van de tu xay dung model machine learning , coding in algorithm, hacking , code web , ... build server and system, ... 
+
+# tu do thuc hien cai gi la tot nhat ???
+# review code cpp 
+# tiep tuc code js , xem xet cac van de ben trong js, cac van de tu so hoc so cap den hien dai, viewport of something 
+# chuyen doi 1 van de trong toan hoc thanh 1 problem trong toan tin : 
+
+# co the tien hanh chuyen doi dieu kien duoc dung la vay con khong thi con co the lam theo nhieu cach khac nhau, vi du nhu la: khi thuc hien bai nay thi : 
+
+# neu ta quan sat cac van de trong code cpp thi de dang nhan thay vai diem sau:
+
+# gia su neu 1 diem co the duoc sinh ra: 
+# neu thuc hien ung dung nhieu thu vao trong cac van de nhu vay :
+# thi khi do ta cung co the lam duoc thoi ok just do it ???
+# dau tien can xac dinh ro nen lam cai gi ? vay thi no la cai gi bay gio day ????
+
+
+
+# khi tam trang phai du thoai mai enjoy in solving problem we can solve new problem ???
+
+
+# n phai nhub the nao de dat gia tri lon nhat co the de boc 1 thang pass qua 1 thang khac,
+
+# first ideal, chon binh chua it nhat ma do qua cho cai binh con du nhieu nhat 
+
+# dung la nhu vay, neu cai binh du nhieu nhat dung la cai binh chua it nhat thi sao???
+
+# Tim n nho nhat de khong thoa man yeu cau -> n lon nhat can tim de thoa man
+
+# Ta co Rmax la 1 bien so (dung la nhu vay:) do do chon 1 gia tri Rmax bat ky thi ???
+a_min>=rmax+1 -> dung la nhu vay ,
+
+# khi do : ta co with rmax chay thu trong 1 khoang nao do :
+
+# ta co : r_max=x -> a_min=r_max+1 
+
+# sau do : ai>=a_min and r_i<=r_max (dung do do de tim ri) thi ta bat buoc phai lam : cho chan lan luot tung bien so
+# ta lap luan nhu sau, trong moi th phan bo thi cung se tuong ung voi 1 gia tri cua rmax:
+
+# ma trong moi truong hop co gia tri rmax bang nhau do thi se co 1 th dat so luong n nho nhat :
+# n= sigma ai -> 
+voi 1 gia tri r_max =x  , thi ton tai ta xet binh co dung tich: 2x+1 -> nhat dinh se nho hon 200 va >=101 -> gioi han duoc gia tri x:  50 <= x <=99
+
+# tu day de dang co duoc he dieu kien rang buoc ve cac ai  -> get gtmin cho moi 1 gia tri a_i
+# tu do -> tuong ung voi r_max=x -> ta suy ra duoc n nho nhat theo x va cac input param. 
+Tu day thiet lap 1 pt bac 2 de tinh toan duoc no :
+# dieu nay kha don gian de tinh toan
+
+# Ta sinh ra 1 lop cac bai toan ma no co the phan chia thanh he thong cac bai toan con , sau do moi bai toan con cho ra 1 gia tri toi uu, tu day bat dau chon ra bai toan con nao co nghiem la tot nhat (exactly)
+
+# lap luan nhu sau: no la 1 chuoi cac suy luan phu hop va khong ton tai mau thuan
+
+# Tai sao problem do van chua thuc hien duoc ???
+
+# bat dau 1 problem khac: ta co the thuc hien nhu sau: 
+
+# Dau tien xem xet tai sao lai bat dau tu da thuc nay ???
+
+# First we have tinh chat cua so phuc co the phan tich 1 da thuc bat ky tro thanh 1 tich cua cac da thuc bac nhat dung ,, do do 1 da thuc bat ky bac n luon ton tai dung n nghiem phuc 
+
+# Chinh xac la nhu vay , ngoai ra viec su dung gia tri can bac n cua 1 
+
+
+da binh thuong lai roi dung la nhu
+
+# dau tien chi can chung minh duoc cong thuc con viec co the di sau den dau cua bai toan thi con tuy thuoc vao no nua dung kon??? 
+
+# ro rang la cach nghi trong solve cac pt ham no kho hon dung khong ???
+
+
+#nen nho la yutaka co thoi gian code truoc chemthan kha la lau dung la nhu vay: do do de thuc hien duoc dieu kien nay : thi
+
+Tai sao ta can khai thac cac van de theo kieu do ????
+
+do la do dieu gi tac dong den ???
+
+# first, we have???
+# Thong thuong thi khai thac yeu to nao la do minh tu cam nhan la yeu to do no can thiet thi moi lam:
+
+# vi du : neu co tinh toan anh tren R ta nghi ngay den viec tinh toan 1 vai gia tri de tien hanh viec thay the cho no don gian hon, nhung neu ta co vai diem cua ham roi thay vao de co duoc cac bieu thuc lien he don gian hon :
+
+# Co the nhac no tu ben trong cai ham chay ra ben ngoai dung : 
+
+# Khi co dieu do thi moi thu da de dang hon roi do : 
+
+# Trong cac van de ve khai thac tinh tang giam thuong thi no se khong don gian : 
+# Ta can lien he duoc viec su dung tinh tang giam voi viec chot ha cho bai toan 
+# Dung khi ta chia duoc truong hop ra la no tang hay giam thi ta cung co the lam duoc thoi:
+
+# Vi du: neu co the : 
+# dung la nhu vay:
+
+# Thong thuong thi de thu duoc 1 ket qua nao do thi ta nen ap dung tinh bang 2 cach dung, 
+
+# Vay thi tinh cai gi ??? tai sao ta nghi ra duoc viec tinh toan cai do????
+# Dau tien ta co bieu thuc quan he (a) , ta muon su dung (a) de dat duoc dieu gi do, 
+vay ta se tien hanh su dung  bieu thuc de bai hoac la bieu thuc ta da co , sau do : 
+thuc hien xay dung 1 cai form phu hop voi bieu thuc (a) sau do ap che vao trong bieu thuc de bai, khi do ta thu duoc 1 ket qua nao do :
+
+# nen nho tu tuong tinh bang 2 cach luon to ra co hieu qua, 
+
+# Tinh dai luong nao ????
+# How to nghi ra dai luong tinh toan  
+
+
+f(xf(x)+ f(y)) = f(x)^2+ y;
+
+Do  van de ban dau ta da nghi nhu the nao ???
+
+# Thu nhat ta chung minh day la 1 ham cong tinh :
+
+# Vay thi truoc khi chung minh no co tnh cong tinh can khai thac vai yeu to co so:
+# Nhan xet: f la don anh dung :
+
+
+#khi do ta da co moi lien he : f( f(y)+a )= a^2+y
+#la khai thac cai gi ?, non la khai thac tu bieu thuc trong ngoac di ra den ben ngoai dung :
+# Sau do la cai gi nua??? 
+# Don gian hoa van de : ntn ???
+
+# no co the noi la nhu vay :
+
+# can su dung dai luong nay, ma ta cung cac s
+
+
+# Sau do thi sao: 
+
+# Ta se co duoc: 
+# nhan xet vai dac diem ta co ngay duoc dieu can tim la : 
+
+# neu co 2 trong 3 van de can chu y thi ro rang:
+
+
+
+# Vai thu can xac dinh lai: do la ta can lam gi trong thoi diem nay so luong cac problem trong toan hoc so cap qua lon lai kho ma phan loai duoc nen lam sao ma xu ly full duoc?/?
+# Do do de thuc hien tot diem nay thi ta nen lam cai gi ???
+
+# Tiep theo, voi 1 gia dinh la nhu the nay,
+
+# Vi du trong 1 so truong hop ta co the lam nhu sau:
+
+# Ta co 1 van de trong cac van de can solving: 
+
+# Today 30/09 ->01/10/2020 
+# 3 months con lai thi nen focus vao english + algorithm or programing instead of math:
+# Dung la nhu vay : 
+
+# Sau do de thuc hien tot cac van de theo kieu nhu vay ta can lam gi de chong choi duoc voi su khac nghiet cua moi truong ??? 
+# dau tien xay dung dieu kien song du tot , sau do xac dinh thu tu cac cong viec can thuc hien, xay dung he thong cac van de nhu the napo ??
+
+# Chi ly giai khong the khong the duoc dau, 1 van de can co su hinh dung ngon nguon 1 cach cu the nhat thi moi duoc. Do do ta nhan ra duoc minh can lam cai gi thi moi co the lam duoc :
+
+# Khi ton tai trong 1 moi truong khac nghiet ta van co the su dung hieu qua thoi gian cua minh thi moi la ok nhat dung la nhu vay :
+
+# Sau do , voi vai 3 van de nhu sau: ta thuc hien lai : neu 1 cach ma khong duoc thi ta se lam cach khac :
+
+# Khi co the met moi toi gioi han nao do van co the vuot qua duoc cai diem do coi nhu se khong sao :
+
+# In 90 days, we must build a plan to do somethings:
+
+# First , in math, nhan ra duoc cac goc nhin la ton tai vo so, khong chi nhin theo cach nguoi khac ma can nhin theo cach cua rieng minh nen ta lai co :
+
+
+# Van de van se tiep dien : 
+# Thuc hien ke hoach mang tinh co so : 
+# Vi du, ta can dat ra han muc thoi gian de hoan thanh cho moi cong viec minh lam, can bam theo plan thi moi reach duoc target 
+# Ta nhan ra rang trong nhung ngay do ta da di qua full cac problems trong toan hoc so cap :
+di tu cac chu de cu ,cac van de duoc review trong sach tu cac phep dem, ta hoc them cac techniques moi de co the xu ly bai toan dem , review and mo rong cach thuc de ma phan hoach cac tap hop , xem xet 1 so cac bai toan moi va cu :
+
+# Hieu ro hon ve no , cach thuc trong viec xay dung cac mo hinh giai quyet tu ton cac problem trong toan hoc (dung vay da la toan thi khong the nhanh duoc :) 
+
+# Vi na can mo mam cqc huong di, suy luan chat loc du kien va thong tin can thiet, hoc ve cach thuc dieu chinh du lieu dau vao cho 1 bai toan , review 1 so problem trong so hoc  va day so , doc qua 1 so cac chuyen de toan hoc de co the hinh thanh duoc cac dang thuc can thiet, ta can xac dinh them ve su ton tai :
+
+# Nhan xet, tu duy co ban trong toan hoc, dac biet trong hinh hoc do la: lam sao 1 object tro nen xac dinh ??? Mo rong no ra hon nua la lam the nao de 1 xay dung duoc he thong cac lien he va biet duoc cai nao la co ich ???
+# Dung la nhu vay :
+
+# Trong viec giai toan tu dai so,so hoc ,to hop , hinh hoc deu co nhung dac diem chung kha la giong nhau dung la nhu vay: 
+# Nen nho de xay dung 1 de toan thi moi nguoi se nhin nhan vao nhung diem khac nhau sau do xay dung thanh de bai vay thi lam sao di nguoc lai duoc ???
+
+# Dieu nay khong he kho ?? hay la rat kho ???
+
+# Co the la nhung thu kho nhan ra duoc:
+# Cach thuc chung nhat de giai quyet moi van de trong toan hoc do la lien tuc xay dung nen cac goc nhin sau do co gang lien ket no lai , y tuong den tu dau??? 
+# Co gang dua bai toan ve nhung dang da biet , o do se de dang xu ly hon ,khi gap be tac-> sang tao len thi co the giain duoc /?/
+# Doi voi viec su dung ham sinh trong giai toan to hop thuc ra no la viec loi dung cac he so cua da thuc cung voi viec phan chia den cac da thuc bac nhat cua 1 da thuc neu xet ca nghiem phuc. 1 da thuc bac n -> co n nghiem phuc
+
+# cac van de ve xac suat thi sao ???
+
+# tiep theo ta nen tao ra cai gi , ly giai cac van de mang tinh tu nhien ????
+
+# 1 bai toan tao cam giac kho do la do no la du kien roi rac ko khai thac va tao duoc lien ket duoc cac du kien trong de bai , ko lien ket duoc 
+# kho tu cach tiep can , kho trong qua trinh giai, kho tu viec dinh huong ???
+
+# hay la di den dau do thi gap be tac va ko di duoc nua ???
+# 1 bai toan kho luon la 1 hanh trinh cho su giai quyet , tai sao minh cam nhan duoc diem nay???
+# thu nhat la do thien huong tu nhien ko nhu tui kia , can phai xay dung pp khoa hoc va thich hop nhat de dat duoc dieu gi do /?
+
+# neu thuc hien lai cac problem 
+# xay dung coding skills ta co duoc :
+
+# neu vai van de xay ra thi the nao ???
+# dieu can thuc hien : hoc lai cac cach thuc ma hoa thong tin sau do tien hanh kich hoat lai eclipse: dung la nhu vay:
+
+#neu ko thi ta cu su dung cpp la ok  just do it 
+# tu nhien tao lao vl dung la nh vay:
+
+
+# khi da biet loi giai roi thi no ko con tu nhien nua dung la nhu vay : 
+
+# tu do de dang sinh ra duoc :
+# nhan thay lai may bai toan ve so hoc thi the nao ????
+# cac van de khi phan tich thua so nguyen to , tinh toan 1 gia tri mu la ra ngay do ma 
+
+# muc do tap trung co the da giam dung la nhu vay :
+# nhung thu can thiet phai duoc xay dung ?
+
+# mo ta lai cac chuc nang va moi lien ket cac tang trong cac giao thuc truyen thong ???
+
+# vi du dau tien ta co tang application layer, transport layer, network layer, data-link, physics. 
+
+# doi voi transport layer: with 2 common protocol : TCP and UDP , message unit: segment (tcp or udp ) dung la nhu vay , specific format segment , control flow , lam the nao de no ko bi vuot qua kha nang nhan lay cac goi tin , dam bao truyen nhan du cac goi tin can co va ko bi loi bit 
+# Network layer support in network thuc hien 2 chuc nang chinh the hien o router : forwading and routing . 
+# Co ban la chuyen doi cho no ra cai port nao la phu hop , va tien hanh xay dung cac routing table and forwarding table. 
+# Nham tien hanh xac dinh duong di phu hop cho cac packet (ip datagram ) khi no den router.
+
+# Tiep theo, o tang data link layer , thuc hien truy nhap duong truyyen theo tan so ...
+# Dieu khien cac ket noi theo dia chi MAC , xay dung cac bang ARP table de tien hanh truyen thong trong mang ethernet ....
+
+# Ok co  ban thi ha tang mang la nhu vay 
+# Cac tang thi no giao tiep voi nhau va giao tiep voi cac tang tren va duoi no de thuc hien chuc nang
+# van de do thi qua don gian roi nen khong can thiet phai noi nua dung la nhu vay :
+
+
+# khi muon hieu duoc thi can co vi du, ta co de thuc hien truyen 
+# no bat tat cac timer de xac dinh xem trong khoang time do no co nhan duoc chua , no luon co 1 chi so de xac dinh la no can pass goi tin  nao di ???

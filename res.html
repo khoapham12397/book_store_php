@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			
+
+			var doc;
+			var boxConts;
+			var products=[];
+			
+			function uploadData(){
+				if(products.length==0) return;
+				let sendData={sender: 'khoa pham', prods: JSON.stringify(products)};
+				console.log("chuan bi truyen data");
+				$.ajax({url: 'getData.php', method: 'POST', dataType: 'JSON',data: sendData}).done(function(result){
+						console.log(result);
+					});
+			}
+				
+
+			function getPriceInt(price){
+				let p=price.substring(0,price.length-2);
+				return parseInt(p)*1000;
+			}
+			$("#btnDo").click(function(){
+				products=[];
+				if(products.length==0){
+				$.ajax({url:$("#inpLink").val() , method: 'POST'}).done(function(data){
+					//alert(data);
+
+					doc=new DOMParser().parseFromString(data,"text/html");
+					boxConts=doc.getElementsByClassName("ma-box-content");
+					alert(boxConts.length);
+					// dau tien can xac dinh lai la gi???
+					for(let i=0;i<boxConts.length;i++){
+						let box=boxConts[i];
+
+						let boxImg= box.getElementsByClassName("product images-container")[0];
+						let nameP= boxImg.getElementsByTagName("a")[0].getAttribute("title");
+						let linkP=boxImg.getElementsByTagName("a")[0].getAttribute("href");
+						let imgSrc=boxImg.getElementsByTagName("img")[0].getAttribute("data-src");
+						let priceBox=box.getElementsByClassName("price-label")[0];
+					let priceP=priceBox.getElementsByClassName("special-price")[0].getElementsByTagName("span")[0].textContent;
+						
+						let product= {
+							name: nameP,
+							link: linkP,
+							path_img: imgSrc,
+							price: getPriceInt(priceP)
+						};
+						products.push(product);
+					}
+					// cai nay dau the nao lay ngay lap tuc duoc dung vcay :
+
+
+					//alert(products[0].link);
+					alert(products.length);
+					//uploadData();
+					for(let i=0;i<products.length;i++){
+						let lin=products[i].link;
+						$.ajax({url: lin,method: "POST"}).done(function(data1){
+							let doc1= new DOMParser().parseFromString(data1,"text/html");
+							let box= doc1.getElementsByClassName("product-view-sa")[0];
+							
+							let box1= box.getElementsByClassName("product-view-sa_one")[0];
+							let box2=box.getElementsByTagName("product-view-sa_two");
+							
+							let authorP=box1.getElementsByClassName("product-view-sa-author")[0].getElementsByTagName("span")[1].textContent;
+							let supplierP=null;
+							let x=box1.getElementsByClassName("product-view-sa-supplier")[0].getElementsByTagName("a")[0];
+							if(x==null){
+								supplierP=box1.getElementsByClassName("product-view-sa-supplier")[0].getElementsByTagName("span")[1].textContent;
+							}else supplierP=x.textContent;
+
+							products[i].supplier=supplierP;
+							products[i].author=authorP;
+							console.log(i.toString()+ " "+ supplierP+ " "+ authorP);
+							
+						});
+					}
+
+					
+					setTimeout(function(){
+						uploadData();
+						for(let i=0;i<products.length;i++){
+							let prod= products[i];
+							let row= $("<tr></tr>");
+							let name=$("<td></td>").html(prod.name);
+							let path=$("<td></td>").html(prod.path_img);
+							let price=$("<td></td>").html(prod.price);
+							let author = $("<td></td>").html(prod.author);
+							let supplier=$("<td></td>").html(prod.supplier);
+							row.append(name,path,price,author,supplier);
+							$("#tblProduct").append(row);
+						}	
+											
+					},5000);
+					
+
+
+				});
+			}
+			});
+
+		});
+		
+	
+	</script>
+</head>
+<body>
+	<input type="text" name="linkHref" id="inpLink" style="width: 500px;">
+	<button id="btnDo">Process</button>
+	<table id="tblProduct">
+		<tr>
+			<th>Product Name</th>
+			<th>Path Image</th>
+			<th>Price</th>
+			<th>Author</th>
+			<th>Supplier</th>
+		</tr>
+
+	</table>
+</body>
+
+</html>
+
+
+
